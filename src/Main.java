@@ -35,6 +35,14 @@ public class Main {
     private static StratergyEnum currentStragergy;
     private static User currentUser;
     static {
+        User kenvi = new User("kenvi","*****",StratergyEnum.NORMAL);
+        users.put("kenvi", kenvi);
+
+        User ph13175496035 = new User("ph13175496035","***", StratergyEnum.NORMAL);
+        users.put("ph13175496035",ph13175496035);
+
+        User zh13148455976 = new User("zh13148455976","*****", StratergyEnum.NORMAL);
+        users.put("zh13148455976",zh13148455976);
 
 
     }
@@ -68,7 +76,7 @@ public class Main {
 //
 //
 //    }
-
+    //http://fzwjt.com/Login/Register?backurl=http%3A%2F%2Ffzwjt.com%2FCourse%2FPlay%3FcId%3D209%26vId%3D2054%26uid%3D29733
     private static Connection connection = null;
     public static void main(String args[]) throws Exception {
         init();
@@ -82,7 +90,8 @@ public class Main {
         //currentUser = users.get("pho15872398212");
          //currentUser = users.get("akkfafa");
         //currentUser = users.get("kafka");
-        currentUser = users.get("ls837508537");
+        currentUser = users.get("ph13175496035");
+       // currentUser = users.get("zh13148455976");
 
         currentStragergy = currentUser.getStratergyEnum();
         finishCourse();
